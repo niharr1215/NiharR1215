@@ -1,0 +1,16 @@
+---
+general:
+  cpiApiServiceKeyCredentialsId: "iscicdtest"
+  integrationFlowId: "testiflow"
+stages:
+  Upload:
+    enabled: true
+  Deploy:
+    enabled: true
+  Integration Test:
+    enabled: false
+steps:
+  integrationArtifactUpload:
+    packageId: "testpackage"
+    integrationFlowName: "testiflow"
+
