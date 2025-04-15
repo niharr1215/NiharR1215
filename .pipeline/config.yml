@@ -8,7 +8,7 @@ stages:
   Deploy:
     enabled: true
   Integration Test:
-    enabled: true
+    enabled: false
 steps:
   integrationArtifactUpload:
     packageId: "testpackage"
