@@ -13,9 +13,12 @@ steps:
   integrationArtifactUpload:
     packageId: "testpackage"
     integrationFlowName: "testiflow"
-httpCall:
-    url: ${integrationArtifactGetServiceEndpoint.response.url}  # This will be HTTPS
-    method: POST
-    contentType: text/plain
-    payload: ./testpayload.txt
-
+integrationArtifactDeploy:
+ packageId: "testpackage"
+ integrationFlowName: "testiflow"
+ 
+integrationArtifactTest:
+ receiverUrl: "https://26b833abtrial.it-cpitrial06-rt.cfapps.us10-001.hana.ondemand.com/http/testiflow"
+ messageBodyFilePath: "testpayload.txt"  # Pfad zur Payload-Datei im Git-Repo
+ contentType: "text/plain"
+ requestMethod: "POST"
