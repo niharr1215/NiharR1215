@@ -18,3 +18,10 @@ integrationArtifactDeploy:
  packageId: "testpackage"
  integrationFlowName: "testiflow"
  
+ integrationArtifactTest:
+ receiverUrl: "https://26b833abtrial.it-cpitrial06-rt.cfapps.us10-001.hana.ondemand.com/http/testiflow"
+ messageBodyFilePath: "testpayload.txt"  
+ contentType: "text/plain"
+ requestMethod: "POST"
+
+ 
